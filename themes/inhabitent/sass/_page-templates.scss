@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Front page */
+.home.page-template-default.page.page-id-4{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr 2fr 4fr 2fr 4fr 2fr 4fr 4fr
+}
+
+.main-navigation.sticky-element-original.element-is-not-sticky.sticky-element-active{
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+
+.site-title{
+	background-image:  url("../../images/logos/inhabitent-logo-tent-white.svg");
+	background-repeat: no-repeat;
+	background-size: 50px 33px;
+    background-color:black;
+    grid-row-start: 1;
+    grid-row-end:2;
+    z-index:3;
+}
+
+section.home-hero{
+	background-image:  url("../../images/home-hero.jpg");
+	width:100%;
+    background-repeat: no-repeat;
+	grid-row: 1/span 3;
+
+	
+}
+
