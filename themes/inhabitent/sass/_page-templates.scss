@@ -2,34 +2,169 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
-.home.page-template-default.page.page-id-4{
+/* Front page START------------------------------------------------------------------------*/
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:inherit; 
+     text-decoration: underline;
+}
+/* All content on Front page */
+.hfeed.site{
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 10fr 2fr 4fr 2fr 4fr 2fr 4fr 4fr
+    grid-template-rows: 1fr 5.2fr 2fr 4fr 2fr 4fr 2fr 4fr 2fr 4fr;
 }
-
-.main-navigation.sticky-element-original.element-is-not-sticky.sticky-element-active{
+/* Menu div*/
+.main-navigation{
     grid-row-start: 1;
     grid-row-end:2;
+    width:25%;
+    justify-self: end;
+    position:fixed;
+    
+}
+/* Inside menu*/
+#primary-menu{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    color: white;   
+    margin: 1em;
 }
 
-.site-title{
+#menu-item-105 {
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    color: white;   
+}
+
+#menu-item-106  {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end:3;
+    color: white; 
+}
+
+#menu-item-107  {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end:4;
+    color: white; 
+}
+
+#menu-item-108  {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end:5;
+    color: white; 
+}
+#menu-item-109  {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end:6;
+    color: white; 
+}
+
+/* Primary Menu end*/
+
+/*.site-title{
 	background-image:  url("../../images/logos/inhabitent-logo-tent-white.svg");
 	background-repeat: no-repeat;
 	background-size: 50px 33px;
     background-color:black;
-    grid-row-start: 1;
-    grid-row-end:2;
-    z-index:3;
-}
+    z-index:1;
+}*/
 
-section.home-hero{
-	background-image:  url("../../images/home-hero.jpg");
-	width:100%;
+/* Setting hero image*/
+.site-header{
+	background-image:  url("../../images/logos/inhabitent-logo-full.svg"), url("../../images/home-hero.jpg");
     background-repeat: no-repeat;
-	grid-row: 1/span 3;
+    background-size: 20%, cover;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-position: 50%, 0;
+    display:grid;
+    grid-template-columns: 10fr 1fr; 
 
-	
+    
+   
+}
+/* Footer start*/
+.site-footer{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-row-start: 10;
+    grid-row-end: 11;
 }
 
+.contact-us{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: white;
+}
+
+.contact-us h3{
+    color: #d99054
+}
+
+.business-hours{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    color: white;
+}
+
+.business-hours h3{
+    color: #d99054
+}
+
+.site-info{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    justify-self: center;
+    color: white;
+}
+
+.footer-logo{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    justify-self: center;
+    z-index:4;
+}
+
+.days-of-week{
+    font-weight: bold;
+}
+
+/* Footer end*/
+
+/* Front page END---------------------------------------------------------------------------------*/
+/* 404 START -------------------------------------------------------------------------------------*/
+page-title h1{
+    font-size:2.4rem;
+    font-weight:bold;
+}
+
+.widgettitle{
+    font-size:1.5rem;
+    background-color: red;
+}
