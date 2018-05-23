@@ -19,6 +19,8 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+
+        <p><?php echo CFS()->get('price'); ?></p>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

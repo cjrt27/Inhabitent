@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying products pages.
+ * The template for displaying products pages (shop page).
  *
  * @package RED_Starter_Theme
  */
@@ -15,15 +15,30 @@ get_header(); ?>
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
+
+				<!-- Another get_terms loop would go (do,eat,sleep,weat) -->
+				<?php 
+				$terms =get_terms(array(
+					'taxonomy'=>'product_type',
+					'hide_empty'=>false
+				));
+				?>
+				<?php foreach ( $terms as $term) : 
+?>		
+		<div class="product-type-on-shop">
+        <div class="product-type-title-<?php echo $term->name;?>"><a href="<?php get_term_link($term,$taxonomy='product_type')?>" class="product-type-category-<?php echo $term->name;?>"><?php echo $term->name; ?></a></div>	
+		</div>
+       <?php 
+                endforeach;
+            ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content', 'product' );
 				?>
 
 			<?php endwhile; ?>

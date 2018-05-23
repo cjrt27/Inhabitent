@@ -681,7 +681,7 @@ a:hover {
   text-decoration: underline; }
 
 /* All content on Front page */
-.hfeed.site {
+.home.page .hfeed.site {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 5.2fr 2fr 4fr 2fr 4fr 2fr 4fr 2fr 4fr; }
@@ -690,7 +690,7 @@ a:hover {
 .main-navigation {
   grid-row-start: 1;
   grid-row-end: 2;
-  width: 25%;
+  width: 40%;
   justify-self: end;
   position: fixed; }
 
@@ -737,15 +737,17 @@ a:hover {
   color: white; }
 
 /* Primary Menu end*/
-/*.site-title{
-	background-image:  url("../../images/logos/inhabitent-logo-tent-white.svg");
-	background-repeat: no-repeat;
-	background-size: 50px 33px;
-    background-color:black;
-    z-index:1;
-}*/
+.site-title a {
+  background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 50px;
+  min-height: 33px;
+  margin-left: 12%;
+  position: fixed; }
+
 /* Setting hero image*/
-.site-header {
+.home.page .site-header {
   background-image: url("../../images/logos/inhabitent-logo-full.svg"), url("../../images/home-hero.jpg");
   background-repeat: no-repeat;
   background-size: 20%, cover;
@@ -812,3 +814,21 @@ page-title h1 {
 .widgettitle {
   font-size: 1.5rem;
   background-color: red; }
+
+/* 404 END -------------------------------------------------------------------------------------*/
+/* About START -------------------------------------------------------------------------------------*/
+/* All content on About page */
+.page-template-about #post-39 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3.2fr 2fr; }
+
+.page-template-about .entry-title {
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.page-template-about .entry-content {
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 3; }

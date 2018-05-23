@@ -17,6 +17,51 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
+<!--  looping through Shop Product Types on front page START -->
+
+<?php 
+
+    $terms = get_terms(array(
+		'taxonomy' => 'product_type',
+		'hide_empty' => false
+	));
+        foreach ( $terms as $term) {
+?>		
+		<div class="product-type-<?php echo $term->name;?>">
+		<div class="product-type-image">
+		<img src="<?php echo get_template_directory_uri()?>/images/product-type-icons/<?php echo $term->slug;?>.svg" alt="Product Type Image">
+		</div>
+        <div class="product-type-title"> <a href="<?php the_permalink()?>" class="title"><?php echo $term->name; ?> Stuff</a></div>	
+		<div class= "product-type-desc"><?php echo $term->description; ?></div>
+		</div>
+       <?php 
+                }
+            ?>
+
+
+
+<!--  looping through Shop Product Types on front page END -->
+<!--  looping through most recent journal posts on front page START -->
+
+			<?php
+				
+				
+				$args = array( 'post_type' => 'post', 'order' => 'DESC','orderby' => 'date','posts_per_page' => 3 );
+				$journal_posts = get_posts( $args ); // returns an array of posts
+			?>
+			
+			<?php 
+				foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+			
+					<div class="journal-entry">
+					<div class = "journal-image"> <?php the_post_thumbnail('thumbnail'); ?></div>
+					<?php the_date(); ?> / <?php comments_number(); ?>
+					<a href="<?php the_permalink()?>" class="title"><?php the_title(); ?></a>	 
+					<a href="<?php the_permalink()?>" class="button">Read Entry</a>
+					</div>	 
+			<?php endforeach; wp_reset_postdata(); ?>
+			<!--  looping through most recent journal posts on front page END -->
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -1,5 +1,0 @@
-<?php
-
-?>
-
-<?php get_sidebar(); ?>

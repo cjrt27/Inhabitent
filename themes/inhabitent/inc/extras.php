@@ -51,3 +51,25 @@ function inhabitent_login_logo_title(){
 }
 
 add_filter('login_headertitle', 'inhabitent_login_logo_title');
+
+
+// Make hero image customizable through CFS field
+
+	function about_hero(){
+		if ( ! is_page_template('about.php' )){
+			return;
+		}
+			$image= CFS()->get('header_image');
+
+			if(! $image){
+				return;
+			}
+
+			$about_hero_css = ".page-template-about .entry-header {
+					background-image: url( '{$image}' );
+					background-size: cover, cover;
+			}";
+
+			wp_add_inline_style( 'inhabitent-style', $about_hero_css );
+				};
+	add_action( 'wp_enqueue_scripts', 'about_hero' );
