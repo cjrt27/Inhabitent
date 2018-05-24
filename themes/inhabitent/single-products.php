@@ -19,13 +19,24 @@ get_header(); ?>
 					<?php endif; ?>
 
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+					<p><?php echo CFS()->get('price'); ?></p>
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">
 					<?php the_content(); ?>
-
-					<p><?php echo CFS()->get('price'); ?></p>
+					<div class="social-buttons">
+						<button type="button" class="black-btn">
+							<i class="fab fa-facebook-f"></i>
+							LIKE
+						</button>
+						<button type="button" class="black-btn">
+						<i class="fab fa-twitter"></i>
+							TWEET
+						</button>
+						<button type="button" class="black-btn">
+						<i class="fab fa-pinterest"></i>
+							PIN
+						</button>
 				</div><!-- .entry-content -->
 
 				<footer class="entry-footer">

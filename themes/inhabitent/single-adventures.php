@@ -19,7 +19,7 @@ get_header(); ?>
 					<?php endif; ?>
 
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+					<h2 class='entry-author'>By <?php the_author(); ?></h2>
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">

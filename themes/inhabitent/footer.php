@@ -15,7 +15,7 @@
 						<h3>CONTACT INFO</h3>
 						<p>
 							<i class ="fa fa-envelope"></i>
-							<a href="mailto:info@inhabitent.com">mailto:info@inhabitent.com</a>
+							<a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
 						</p>
 						<p>
 							<i class ="fa fa-phone"></i>

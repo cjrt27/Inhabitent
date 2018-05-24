@@ -11,14 +11,11 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
+			
 
 <!--  looping through Shop Product Types on front page START -->
-
+<section class="product-container">
+		<h1>SHOP STUFF</h1>
 <?php 
 
     $terms = get_terms(array(
@@ -34,15 +31,17 @@ get_header(); ?>
         <div class="product-type-title"> <a href="<?php echo get_term_link($term)?>" class="title"><?php echo $term->name; ?> Stuff</a></div>	
 		<div class= "product-type-desc"><?php echo $term->description; ?></div>
 		</div>
+		
        <?php 
                 }
             ?>
-
+</section>
 
 
 <!--  looping through Shop Product Types on front page END -->
 <!--  looping through most recent journal posts on front page START -->
-
+<section class="journal-container">
+		<h1>INHABITENT JOURNAL</h1>
 			<?php
 				
 				
@@ -60,8 +59,33 @@ get_header(); ?>
 					<a href="<?php the_permalink()?>" class="button">Read Entry</a>
 					</div>	 
 			<?php endforeach; wp_reset_postdata(); ?>
+</section>
+			
 			<!--  looping through most recent journal posts on front page END -->
+			
 
+<!--  looping through most recent Adventure posts on front page START -->
+<section class="adventures-container">
+		<h1>LATEST ADVENTURES</h1>
+			<?php
+				
+				
+				$args = array( 'post_type' => 'adventures', 'order' => 'DESC','orderby' => 'date','posts_per_page' => 4 );
+				$adventure_posts = get_posts( $args ); // returns an array of posts
+			?>
+			
+			<?php 
+				foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+			
+					<div class="adventure-entry">
+					<div class = "adventure-image"> <?php the_post_thumbnail('thumbnail'); ?></div>
+					<a href="<?php the_permalink()?>" class="title"><?php the_title(); ?></a>	 
+					<a href="<?php the_permalink()?>" class="button">Read More</a>
+					</div>	 
+			<?php endforeach; wp_reset_postdata(); ?>
+			<a href="<?php home_url()?>/wordpressInhabitent/adventures" class="button">MORE ADVENTURES</a>
+</section>
+<!--  looping through most recent Adventure posts on front page END -->
 
 
 		</main><!-- #main -->

@@ -96,7 +96,7 @@ function adventure_post_type() {
 	);
 	$args = array(
 		'label'                 => 'adventure',
-		'description'           => 'different adventures',
+		'description'           => 'latest adventures',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor','thumbnail' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),

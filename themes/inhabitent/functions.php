@@ -91,6 +91,10 @@ function red_starter_scripts() {
 
 	wp_enqueue_style('font-awesome','https://use.fontawesome.com/releases/v5.0.13/css/all.css');
 
+	wp_enqueue_style( 'jquery');
+
+	wp_enqueue_script( 'search-toggle', get_template_directory_uri() . '/build/js/search-toggle.min.js', array('jquery'), '1.0.0', true );
+
 	//wp_enqueue_script( 'js-addition', get_template_directory_uri() . 'location of new file', array(), 'version', true ); -- true means that it's going to be loaded in the footer. False would mean that it's going to be loaded in the header.
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
