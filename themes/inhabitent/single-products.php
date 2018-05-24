@@ -12,9 +12,28 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'product' ); ?>
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<header class="entry-header">
+					<?php if ( has_post_thumbnail() ) : ?>
+						<?php the_post_thumbnail( 'large' ); ?>
+					<?php endif; ?>
 
-			<?php the_post_navigation(); ?>
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+				</header><!-- .entry-header -->
+
+				<div class="entry-content">
+					<?php the_content(); ?>
+
+					<p><?php echo CFS()->get('price'); ?></p>
+				</div><!-- .entry-content -->
+
+				<footer class="entry-footer">
+				</footer><!-- .entry-footer -->
+			</article><!-- #post-## -->
+
+
+		
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.

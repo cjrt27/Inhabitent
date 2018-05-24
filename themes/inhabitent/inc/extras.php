@@ -73,3 +73,15 @@ add_filter('login_headertitle', 'inhabitent_login_logo_title');
 			wp_add_inline_style( 'inhabitent-style', $about_hero_css );
 				};
 	add_action( 'wp_enqueue_scripts', 'about_hero' );
+
+	//Changin titles 
+
+	function title_change_shop($title){
+		if(is_post_type_archive('products')){
+			$title = 'SHOP STUFF';
+		}elseif(is_tax('product_type')){
+			$title = single_term_title();
+		}
+		return $title;
+	}
+	add_filter('get_the_archive_title', 'title_change_shop');

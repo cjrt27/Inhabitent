@@ -17,7 +17,7 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
 
-				<!-- Another get_terms loop would go (do,eat,sleep,weat) -->
+				<!-- Loop to get do,eat,sleep,wear as icons on top -->
 				<?php 
 				$terms =get_terms(array(
 					'taxonomy'=>'product_type',
@@ -27,7 +27,7 @@ get_header(); ?>
 				<?php foreach ( $terms as $term) : 
 ?>		
 		<div class="product-type-on-shop">
-        <div class="product-type-title-<?php echo $term->name;?>"><a href="<?php get_term_link($term,$taxonomy='product_type')?>" class="product-type-category-<?php echo $term->name;?>"><?php echo $term->name; ?></a></div>	
+        <div class="product-type-title-<?php echo $term->name;?>"><a href="<?php echo get_term_link($term)?>" class="product-type-category-<?php echo $term->name;?>"><?php echo $term->name; ?></a></div>	
 		</div>
        <?php 
                 endforeach;

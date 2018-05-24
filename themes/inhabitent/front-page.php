@@ -31,7 +31,7 @@ get_header(); ?>
 		<div class="product-type-image">
 		<img src="<?php echo get_template_directory_uri()?>/images/product-type-icons/<?php echo $term->slug;?>.svg" alt="Product Type Image">
 		</div>
-        <div class="product-type-title"> <a href="<?php the_permalink()?>" class="title"><?php echo $term->name; ?> Stuff</a></div>	
+        <div class="product-type-title"> <a href="<?php echo get_term_link($term)?>" class="title"><?php echo $term->name; ?> Stuff</a></div>	
 		<div class= "product-type-desc"><?php echo $term->description; ?></div>
 		</div>
        <?php 
@@ -61,6 +61,8 @@ get_header(); ?>
 					</div>	 
 			<?php endforeach; wp_reset_postdata(); ?>
 			<!--  looping through most recent journal posts on front page END -->
+
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

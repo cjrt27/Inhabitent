@@ -10,17 +10,17 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+			<a href="<?php echo get_permalink()?>"><?php the_post_thumbnail( 'large' ); ?></a>
 		<?php endif; ?>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php the_content(); ?>
 
-        <p><?php echo CFS()->get('price'); ?></p>
+
+
+	<div class="product-info">
+		<p><?php echo the_title(); ?></p>
+        <span><?php echo CFS()->get('price'); ?></span>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

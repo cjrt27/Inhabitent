@@ -1,7 +1,26 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* Global settings START-------------------------------------------------------*/
+body, button, input, select, textarea {
+    color: #404040;
+    font-family: Merriweather,serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+}
 
+p {
+    margin-bottom: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    font-family: Novecento,sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* Global settings END-------------------------------------------------------*/
 /* Front page START------------------------------------------------------------------------*/
 
 a {
@@ -21,16 +40,16 @@ a:hover
     grid-template-rows: 1fr 5.2fr 2fr 4fr 2fr 4fr 2fr 4fr 2fr 4fr;
 }
 /* Menu div*/
-.main-navigation{
+ .main-navigation{
     grid-row-start: 1;
     grid-row-end:2;
-    width:40%;
+    width:100%;
     justify-self: end;
-    position:fixed;
-    
+    position:fixed; 
 }
+
 /* Inside menu*/
-#primary-menu{
+ #primary-menu{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
     color: white;   
@@ -109,8 +128,7 @@ a:hover
     display:grid;
     grid-template-columns: 1fr 1.5fr 1.5fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr 1fr;
-    grid-row-start: 10;
-    grid-row-end: 11;
+    
 }
 
 .contact-us{
@@ -175,20 +193,41 @@ page-title h1{
 /* 404 END -------------------------------------------------------------------------------------*/
 /* About START -------------------------------------------------------------------------------------*/
 /* All content on About page */
-.page-template-about  #post-39{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3.2fr 2fr;
+
+.page-template-about .entry-header{
+    min-height:800px;
 }
 
-.page-template-about  .entry-title{
-    display:grid;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.page-template-about .entry-title{
+    text-align: center;
+    line-height:800px;
+    color:white;
+    font-size:3em;
+    text-transform: uppercase;
 }
 
-.page-template-about  .entry-content{
-    display:grid;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.page-template-about .entry-content{
+    max-width: 800px;
+    margin: 3rem auto;
+}
+
+.page-template-about .entry-content h2 {
+    text-align: center;
+    line-height:1.25;
+}
+
+.page-template-about .main-navigation{
+    width:100%;
+    justify-self: end;
+    position:fixed; 
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-template-about .menu{
+    width:100%;
+    align-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
