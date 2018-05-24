@@ -16,7 +16,9 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     clear: both;
-    font-family: Novecento,sans-serif;
+    font-family: Novecento Sans Web,sans-serif;
+    font-weight: bold;
+    font-style: normal;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -196,6 +198,7 @@ page-title h1{
 
 .page-template-about .entry-header{
     min-height:800px;
+    margin: 0;
 }
 
 .page-template-about .entry-title{
@@ -216,7 +219,7 @@ page-title h1{
     line-height:1.25;
 }
 
-.page-template-about .main-navigation{
+.main-navigation{
     width:100%;
     justify-self: end;
     position:fixed; 
@@ -225,7 +228,7 @@ page-title h1{
     justify-content: flex-end;
 }
 
-.page-template-about .menu{
+.menu{
     width:100%;
     align-content: space-between;
     display: flex;
