@@ -20,11 +20,14 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
-					<div class="logo">
-					<h1 class="site-title"><a href= "<?php home_url()?>"></h1>
-					</div>
-				</div><!-- .site-branding -->
+				<div class="container">
+					<div class="site-branding">
+						<div class="logo">
+							<a href= "<?php echo esc_url( home_url( '/' ) ); ?>">
+								<h1 class="site-title">Inhabitent</h1>
+							</a>
+						</div>
+					</div><!-- .site-branding -->
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
@@ -32,6 +35,7 @@
 						<?php get_search_form()?>
 					</div>
 				</nav><!-- #site-navigation -->
+				</div>
 			</header><!-- #masthead -->
 			
 			<div id="content" class="site-content">
