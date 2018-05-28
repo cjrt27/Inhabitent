@@ -18,6 +18,7 @@ get_header(); ?>
 				?>
 
 				<!-- Loop to get do,eat,sleep,wear as icons on top -->
+				<div class="product-types">
 				<?php 
 				$terms =get_terms(array(
 					'taxonomy'=>'product_type',
@@ -31,11 +32,14 @@ get_header(); ?>
 		</div>
        <?php 
                 endforeach;
-            ?>
+			?>
+			</div>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+		
+		<div class="product-grid">
+		<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
 					get_template_part( 'template-parts/content', 'product' );
@@ -50,7 +54,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

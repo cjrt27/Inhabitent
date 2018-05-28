@@ -39,7 +39,9 @@
 						</p>
 					</div>
 					<div class="footer-logo">
-						<img src="<?php echo get_template_directory_uri()?>/images/logos/inhabitent-logo-text.svg" alt="Our Company Logo">
+						<a href= "<?php echo esc_url( home_url( '/' ) ); ?>">
+							<img src="<?php echo get_template_directory_uri()?>/images/logos/inhabitent-logo-text.svg" alt="Our Company Logo">
+						</a>
 					</div>
 					<div class="site-info">COPYRIGHT &copy 2017 INHABITENT
 					</div><!-- .site-info -->

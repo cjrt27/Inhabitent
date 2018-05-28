@@ -30,8 +30,8 @@ get_header(); ?>
 		<div class="product-type-image">
 		<img src="<?php echo get_template_directory_uri()?>/images/product-type-icons/<?php echo $term->slug;?>.svg" alt="Product Type Image">
 		</div>
-        <div class="product-type-title"> <a href="<?php echo get_term_link($term)?>" class="title"><?php echo $term->name; ?> Stuff</a></div>	
 		<div class= "product-type-desc"><?php echo $term->description; ?></div>
+        <div class="product-type-title"> <a href="<?php echo get_term_link($term)?>" class="title"><?php echo $term->name; ?> Stuff</a></div>	
 		</div>
 		
        <?php 
@@ -56,9 +56,11 @@ get_header(); ?>
 			
 					<div class="journal-entry">
 					<div class = "journal-image"> <?php the_post_thumbnail('thumbnail'); ?></div>
-					<?php the_date(); ?> / <?php comments_number(); ?>
-					<a href="<?php the_permalink()?>" class="title"><?php the_title(); ?></a>	 
-					<a href="<?php the_permalink()?>" class="button">Read Entry</a>
+					<div class="journal-info-wrapper">
+						<div class="journal-date-comments"><?php the_date(); ?> / <?php comments_number(); ?></div>
+						<div class="journal-title"><a href="<?php the_permalink()?>" class="title"><?php the_title(); ?></a></div>	 
+						<div class="journal-read-entry"><a href="<?php the_permalink()?>" class="button">Read Entry</a></div>
+					</div>
 					</div>	 
 			<?php endforeach; wp_reset_postdata(); ?>
 </section>
@@ -80,9 +82,17 @@ get_header(); ?>
 				foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
 			
 					<div class="adventure-entry">
-					<div class = "adventure-image"> <?php the_post_thumbnail('thumbnail'); ?></div>
-					<a href="<?php the_permalink()?>" class="title"><?php the_title(); ?></a>	 
-					<a href="<?php the_permalink()?>" class="button">Read More</a>
+						<div class = "adventure-image"> 
+							<?php the_post_thumbnail('full'); ?>
+						</div>
+						<div class="adventure-info">
+							<div class="adventure-title">
+								<a href="<?php the_permalink()?>" class="title"><?php the_title(); ?></a>
+							</div>	 
+							<div class="adventure-read-more">
+								<a href="<?php the_permalink()?>" class="button">Read More</a>
+							</div>
+						</div>
 					</div>	 
 			<?php endforeach; wp_reset_postdata(); ?>
 			<a href="<?php home_url()?>/wordpressInhabitent/adventures" class="button">MORE ADVENTURES</a>

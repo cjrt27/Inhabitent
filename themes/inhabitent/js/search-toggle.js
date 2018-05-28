@@ -1,6 +1,4 @@
-import { on } from "cluster";
-
-/*below jquery for blur */
+/*below jquery for search toggle */
 
 (function ($) {
   'use strict';
