@@ -13,6 +13,8 @@ body, button, input, select, textarea {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.75;
+    background-color:transparent;
+    border: 1px solid;
 }
 
 p {
@@ -34,27 +36,71 @@ a {
     background-color: transparent;
 }
 
-/* PRIMARY Menu START---------------------------------------------------------------------------------*/
+
+
+label{
+    color: #2f1339;
+    display: block;
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: 17.6px;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+.star{
+    color: #d99054;
+}
+
+input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea {
+    color: #666;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    font-family: Merriweather,serif;
+}
+
+
+
+#archives-3 ul li a:link{
+    color: #248a83;
+}
+
+#archives-3 ul li a:visited{
+    color:#248a83;
+}
+
+#archives-3 ul li a:hover{
+    color: #2f1339
+}
+
+/* PRIMARY Menu START------------------------------------------------------------*/
 
 .site-header {
     background-color: hsla(0,0%,100%,.85);
     border-bottom: 1px solid #e1e1e1;
     z-index:3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    position:fixed;
+    width:100%;
 
 }
 
-.main-navigation{
+.site-branding{
+    margin-left:12%;
+}
+
+ .main-navigation{
     max-width:1120px;
     justify-self: end;
-    position:fixed; 
     align-items: center;
     display: flex;
     justify-content: flex-end;
     font-family: Novecento Sans Web,sans-serif;
     text-transform: uppercase;
-    margin-left:12%;
+    margin-right:12%;
 }
 
 .menu{
@@ -69,51 +115,47 @@ a {
     padding-left: 1.5rem;
 }
 
-.header-search fieldset {
+ .header-search fieldset {
     padding: 0;
     border: 0;
     margin:0;
 }
 
-.search-submit{
+ .search-submit{
     background-color:transparent;
     border: none;
     box-shadow: none;
     outline:none;
     order:-1;
-    color:white;
+    color:#248a83;
 }
 
-::placeholder{
-    color:#f0e4d1;
-}
 
-/* Inside menu START-------------------------------------------------------------------------*/
  #primary-menu{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    color: white;   
+    color: #248a83;   
     margin: 1em;
 }
 
-#primary-menu a:link{
-    color: white;
+ #primary-menu a:link{
+    color: #248a83;
 }
 
-#primary-menu a:visited{
-    color: white;
+ #primary-menu a:visited{
+    color:#248a83;
 }
 
-#primary-menu a:hover{
+ #primary-menu a:hover{
     color: #f0e4d1;
 }
 
-#menu-item-105 {
+ #menu-item-105 {
     grid-column-start: 1;
     grid-column-end:2;
     grid-row-start: 1;
     grid-row-end: 3;
-    color: white;   
+    color: #248a83;  
     text-align:center;
 }
 
@@ -122,7 +164,7 @@ a {
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end:3;
-    color: white; 
+    color: #248a83;
     text-align:center;
 }
 
@@ -131,40 +173,43 @@ a {
     grid-row-end: 3;
     grid-column-start: 4;
     grid-column-end:5;
-    color: white; 
+    color: #248a83;
     text-align:center;
 }
 
-#menu-item-108  {
+ #menu-item-108  {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end:4;
-    color: white; 
+    color: #248a83;
     text-align:center;
 }
-#menu-item-109  {
+ #menu-item-109  {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 5;
     grid-column-end:6;
-    color: white; 
+    color: #248a83;
     text-align:center;
 }
 
 .site header .site-title{
-	background-image:  url("../../images/logos/inhabitent-logo-tent-white.svg");
+	background-image:  url("../../images/logos/inhabitent-logo-tent.svg");
     background-repeat: no-repeat;
     background-size:contain;
     min-width:50px;
     min-height:33px;
+    max-height:33px;
+    max-width:50px;
     margin-left:12%;
-    position: fixed;
-    text-indent: 9999px;
+    text-indent: 100%;
+    overflow:hidden;
+    z-index:2;
 }
 
-/* Inside menu end-------------------------------------------------------------------------*/
-/* Primary Menu end---------------------------------------------------------------------------*/
+/*--Other pages menus END -------------------------------------------------*/
+
 
 /* Footer start------------------------------------------------------------------------------*/
 .site-footer{
@@ -226,6 +271,29 @@ a {
 
 /* Footer end*/
 
+/* Sidebar start*/
+
+.widget-area{
+    margin-left:auto;
+    border-left:1px solid #e1e1e1;
+    padding-left:8%;
+
+}
+
+#archives-3 ul{
+    list-style-type: none;
+    left:0;
+    margin-left:0;
+    padding-left:0;
+}
+
+#inhabitent-business-hours-2 p .day-of-the-week{
+    font-weight:700;
+    margin-right:3px;
+}
+
+
+
 /* Global settings END-------------------------------------------------------*/
 
 /* FRONT PAGE START-------------------------------------------------------*/
@@ -241,6 +309,8 @@ a {
 }
 
 /* SHOP STUFF START------------------------------------------------------------------*/
+
+
 .product-container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr  ; 
@@ -350,7 +420,57 @@ a {
     text-transform: uppercase;
 }
 
+.product-type-title-do a:link{
+    color: #248a83;
+}
+
+.product-type-title-do a:visited{
+    color:#248a83;
+}
+
+.product-type-title-do  a:hover{
+    color: #2f1339
+}
+
+.product-type-title-eat a:link{
+    color: #248a83;
+}
+
+.product-type-title-eat a:visited{
+    color:#248a83;
+}
+
+.product-type-title-eat  a:hover{
+    color: #2f1339
+}
+
+.product-type-title-sleep a:link{
+    color: #248a83;
+}
+
+.product-type-title-sleep a:visited{
+    color:#248a83;
+}
+
+.product-type-title-sleep  a:hover{
+    color: #2f1339
+}
+
+.product-type-title-wear a:link{
+    color: #248a83;
+}
+
+.product-type-title-wear a:visited{
+    color:#248a83;
+}
+
+.product-type-title-wear  a:hover{
+    color: #2f1339
+}
 /* SHOP STUFF END-----------------------------------------------------------*/
+
+
+
 /* Inhaitent Journal START----------------------------------------------------*/
 
 .journal-container{
@@ -402,10 +522,14 @@ a {
 .journal-image img{
     height:250px;
     width:356.4px;
+    margin:0;
+    padding:0;
 }
 .journal-image{
     height:250px;
     width:356.4px;
+    margin:0;
+    padding:0;
 }
 
 .journal-info-wrapper{
@@ -548,11 +672,12 @@ a {
 }
 
 .adventure-entry:nth-child(3) .adventure-image img{
-    min-height:265px;
+    min-height:275px;
     min-width:265px;
-    max-height:265px;
+    max-height:275px;
     max-width:265px;
     bottom:0;
+    object-fit:cover;
 }
 
 .adventure-entry:nth-child(3) .adventure-image{
@@ -581,11 +706,12 @@ a {
 }
 
 .adventure-entry:nth-child(2) .adventure-image img{
-    min-height:265px;
+    min-height:275px;
     min-width:265px;
-    max-height:265px;
+    max-height:275px;
     max-width:265px;
     bottom:0;
+    object-fit:cover;
 }
 
 .adventure-entry:nth-child(2) .adventure-image{
@@ -623,7 +749,46 @@ a {
     left:20px;
 }
 
+.more-adventures{
+    margin-top:1.5rem;
+}
 
+.more-adventures .button{
+    background-color: #248a83;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: Novecento Sans Web,sans-serif;
+    padding: .75rem 1.5rem;
+    margin-top: 25px;
+    max-width: 75%;
+    border: 0;
+}
+
+
+.adventure-title a:link{
+    color: white;
+}
+
+.adventure-title a:visited{
+    color:white;
+}
+
+.adventure-title a:hover{
+    color: #f0e4d1;
+}
+
+
+.adventure-read-more a:link{
+    color: white;
+}
+
+.adventure-read-more a:visited{
+    color:white;
+}
+
+.adventure-read-more a:hover{
+    background-color: #248a83;
+}
 
 
 /* Front page END---------------------------------------------------------------------------------*/
@@ -633,9 +798,22 @@ page-title h1{
     font-weight:bold;
 }
 
-.widgettitle{
-    font-size:1.5rem;
-    background-color: red;
+.search .site-content{
+    display:grid; 
+    grid-template-columns: 2fr 1fr; 
+    padding-top: 50px;
+    max-width:1120px;
+    margin:auto;
+    border-top: 1px solid #e1e1e1;
+}
+.search .site-content .content-area{
+    padding-top:50px;
+}
+
+.search .widget-area{
+    padding-left:8%;
+    padding-top:3rem;
+    padding-bottom:3rem;
 }
 /* 404 END -------------------------------------------------------------------------------------*/
 /* About START -------------------------------------------------------------------------------------*/
@@ -669,7 +847,7 @@ page-title h1{
     line-height:1.25;
 }
 /* About END -------------------------------------------------------------------------------------*/
-/* Products START --------------------------------------------------------------------------------*/
+/* SHOP PAGE START --------------------------------------------------------------------------------*/
 
 .post-type-archive-products .site-content{
     padding-top:3rem;
@@ -679,6 +857,9 @@ page-title h1{
 
 .post-type-archive-products .content-area .page-header{
     margin-bottom:3rem;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -692,7 +873,7 @@ page-title h1{
     justify-content: space-evenly;
     align-items:center;
     text-transform: uppercase;
-    border-bottom: 2px dotted grey;
+    border-bottom: 1px dashed grey;
     margin-bottom:2rem;
 }
 
@@ -710,11 +891,39 @@ page-title h1{
     width:auto;
 }
 
+.thumbnail-wrapper{
+    line-height:0;
+}
+
 .product-info{
     font-size:.9rem;
     border: 1px solid #e1e1e1;
     border-top-width: 5px;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
 }
+
+.line::before{
+    content: "............................";
+    letter-spacing: 4px;
+    font-size: 18px;
+    color:grey;
+    margin-left:20px;
+    position: absolute;
+    z-index:-1;
+}
+
+.product-info .line {
+    margin: 0;
+    background-color:white;
+}
+
+.product-info .price {
+    background-color: white;
+}
+
+
 /* Products FILTERED START --------------------------------------------------------------------------*/
 
 .tax-product_type .site-content{
@@ -751,15 +960,82 @@ text-align: center;
     margin-top:3rem;
 }
 /* Products FILTERED END --------------------------------------------------------------------------*/
-/* JOURNAL START --------------------------------------------------------------------------*/
+/* Individual items in shop START-----------------------------------------------------------*/
+
+.single-products .site-content{
+    max-width:1120px;
+    margin:auto;
+    padding-top: 3rem;
+    padding-bottom:3rem;
+ 
+}
+
+.single-products .site-content .content-area{
+    margin-top:3rem;
+}
+
+.single-products .type-products{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:4.5rem;
+}
+.single-products .product-image-wrapper{
+    max-width:537px;
+    max-height:403px;
+    min-width:537px;
+    min-height:403px;
+    margin-top:50px;
+}
+
+.product-content-wrapper {
+    margin-left:40px;
+}
+
+.product-content-wrapper .entry-header h1 {
+    color: #d99054;
+    margin:0;
+}
+
+.product-content-wrapper .product-price {
+    font-size:1.8rem;
+    margin:0;
+}
+
+.product-content-wrapper .entry-content {
+    margin:0;
+}
+
+
+/* Individual items in shop END-----------------------------------------------------------*/
+
+/* MAIN JOURNAL START --------------------------------------------------------------------------*/
+
+.blog .site-content{
+    display:grid; 
+    grid-template-columns: 2fr 1fr; 
+    padding-top: 100px;
+    max-width:1120px;
+    margin:auto;
+    border-top: 1px solid #e1e1e1;
+}
+
+.blog .content-area{
+    border-top: 1px solid #e1e1e1;
+}
+
+
+
 
 .journal-entry-header{
     position: relative;
+    min-width: 760px;
+    margin-top:auto;
 }
 
 .journal-entry-header img{
     height: auto;
-    max-width: 100%;
+    min-width: 100%;
     position:relative;
 }
 
@@ -776,6 +1052,10 @@ text-align: center;
     top: 0;
 }
 
+.journal-entry-title a{
+    color: #fff;
+}
+
 .journal-entry-meta{
     background-color: #248a83;
     bottom: 0;
@@ -786,4 +1066,315 @@ text-align: center;
     position: absolute;
     right: 0;
     text-transform: uppercase;
+}
+
+.journal-entry-content .button {
+    background-color: transparent;
+    border: 1px solid black;
+    text-transform: uppercase;
+    padding: 1.00005rem 1.5rem;
+}
+
+.journal-entry-content .button:link{
+    color: black;
+}
+
+.journal-entry-content .button:visited{
+    color:black;
+}
+
+.journal-entry-content .button:hover{
+    background-color: #248a83;
+    color: white;
+}
+
+/* MAIN JOURNAL END --------------------------------------------------------------------------*/
+/* JOURNAL POST START --------------------------------------------------------------------------*/
+
+.single-post .site-content{
+    display:grid; 
+    grid-template-columns: 2fr 1fr; 
+    padding-top: 100px;
+    max-width:1120px;
+    margin:auto;
+    border-top: 1px solid #e1e1e1;
+}
+
+.single-post .entry-header{
+    position: relative;
+    min-width: 760px;
+    margin-top:auto;
+}
+
+.single-post .entry-header img{
+    height: auto;
+    min-width: 100%;
+    position:relative;
+}
+
+.single-post .entry-title{
+    background-color: #248a83;
+    color: #fff;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    left: 0;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    top: 0;
+}
+
+.single-post .entry-title a{
+    color: #fff;
+}
+
+.single-post .entry-meta{
+    background-color: #248a83;
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    font-family: Novecento Sans Web,sans-serif;
+    padding: 1.00005rem 1.5rem;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+}
+
+.tags-links a:link{
+    color: #248a83;
+}
+
+.tags-links a:visited{
+    color:#248a83;
+}
+
+.tags-links a:hover{
+    color: #2f1339
+}
+
+.tags-links{
+    margin-left:20px;
+}
+
+.cat-links a:link{
+    color: #248a83;
+}
+
+.cat-links a:visited{
+    color:#248a83;
+}
+
+.cat-links a:hover{
+    color: #2f1339
+}
+
+.single-post .widget-area{
+    padding-left:8%;
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+
+/* comment form start --------------------------------------------------------------------------*/
+
+.comments-link a:link{
+    color: white;
+}
+
+.comments-link a:visited{
+    color:white;
+}
+
+.comments-link a:hover{
+    color: #f0e4d1;
+}
+
+
+#commentform {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr 1fr 1fr;
+}
+
+#commentform p:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:  2;
+}
+
+.comment-form-comment{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:  3;
+}
+
+.comment-form-author{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end:  4;
+}
+
+.comment-form-email{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end:  4;
+}
+
+.comment-form-url{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end:  5;
+}
+
+.comment-form-cookies-consent{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end:  6;
+}
+
+.form-submit{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end:  7;
+
+}
+
+.form-submit #submit{
+    background: #248a83;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: 14.4px;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow:0;
+}
+
+.required{
+    color:#d99054;
+}
+
+
+/* comment form start --------------------------------------------------------------------------*/
+/* JOURNAL POST END --------------------------------------------------------------------------*/
+/* FIND US Start --------------------------------------------------------------------------*/
+
+.page-id-41 .site-content{
+    width:1120px;
+    padding-top:50px;
+    display:flex;
+    flex-direction:row;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.page-id-41 .content-area{
+    padding-top:3rem;
+    padding-bottom:3rem;
+    width:73%;
+    padding-right:5%;
+}
+
+.page-id-41 .widget-area{
+    width:27%;
+    padding-left:8%;
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+
+
+/* FIND US END --------------------------------------------------------------------------*/
+/* Single adventure Start --------------------------------------------------------------------------*/
+
+
+.single-adventures .entry-header img {
+        min-height:897px;
+        min-width: 100%;
+}
+
+.single-adventures .entry-header .entry-title,
+.single-adventures .entry-header .entry-author,
+.single-adventures .entry-content{
+    max-width:1120px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.single-adventures .social-buttons {
+    max-width:1120px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+/* Single adventure end --------------------------------------------------------------------------*/
+
+/* Archives Start --------------------------------------------------------------------------*/
+
+
+.archive.date .site-content{
+    display:grid; 
+    grid-template-columns: 2fr 1fr; 
+    padding-top: 50px;
+    max-width:1120px;
+    margin:auto;
+    border-top: 1px solid #e1e1e1;
+}
+.archive .date .site-content .content-area{
+    padding-top:50px;
+}
+
+.archive.date .widget-area{
+    padding-left:8%;
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+/* Archives END --------------------------------------------------------------------------*/
+/* Latest Adventures Start --------------------------------------------------------------------------*/
+
+.post-type-archive-adventures .site-content,
+.post-type-archive-adventures .site-content .content-area{
+    padding-top:50px;
+}
+
+.adventures-grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width:1120px;
+    margin:auto;
+}
+
+
+#post-153{
+    position: relative;
+}
+
+#post-153 .entry-header{
+    position: relative;
+}
+#post-153 .entry-header .adventure-thumbnail-wrapper a img{
+    min-height:550px;
+    min-width:550px;
+    max-height:550px;
+    max-width:550px;
+}
+
+#post-153 .adventures-info{
+    position:absolute;
+
 }

@@ -46,5 +46,18 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+	<div class="social-buttons">
+						<button type="button" class="black-btn">
+							<i class="fab fa-facebook-f"></i>
+							LIKE
+						</button>
+						<button type="button" class="black-btn">
+						<i class="fab fa-twitter"></i>
+							TWEET
+						</button>
+						<button type="button" class="black-btn">
+						<i class="fab fa-pinterest"></i>
+							PIN
+						</button>
+				</div>
 <?php get_footer(); ?>

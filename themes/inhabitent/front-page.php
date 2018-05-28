@@ -55,7 +55,7 @@ get_header(); ?>
 				foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 			
 					<div class="journal-entry">
-					<div class = "journal-image"> <?php the_post_thumbnail('thumbnail'); ?></div>
+					<div class = "journal-image"> <?php the_post_thumbnail('large'); ?></div>
 					<div class="journal-info-wrapper">
 						<div class="journal-date-comments"><?php the_date(); ?> / <?php comments_number(); ?></div>
 						<div class="journal-title"><a href="<?php the_permalink()?>" class="title"><?php the_title(); ?></a></div>	 
@@ -83,7 +83,7 @@ get_header(); ?>
 			
 					<div class="adventure-entry">
 						<div class = "adventure-image"> 
-							<?php the_post_thumbnail('full'); ?>
+							<?php the_post_thumbnail('large'); ?>
 						</div>
 						<div class="adventure-info">
 							<div class="adventure-title">
@@ -95,7 +95,8 @@ get_header(); ?>
 						</div>
 					</div>	 
 			<?php endforeach; wp_reset_postdata(); ?>
-			<a href="<?php home_url()?>/wordpressInhabitent/adventures" class="button">MORE ADVENTURES</a>
+			<div class="more-adventures"><a href="<?php home_url()?>/wordpressInhabitent/adventures" class="button">MORE ADVENTURES</a>
+			</div>
 </section>
 <!--  looping through most recent Adventure posts on front page END -->
 

@@ -24,6 +24,6 @@
 
 	<div class="journal-entry-content">
 		<?php the_excerpt(); ?>
-		<a href="<?php the_permalink()?>" class="button">Read Entry</a>
+		<a href="<?php the_permalink()?>" class="button">Read More &rarr;</a>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

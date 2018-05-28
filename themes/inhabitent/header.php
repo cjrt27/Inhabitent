@@ -20,7 +20,7 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 			<header id="masthead" class="site-header" role="banner">
-				<div class="container">
+				
 					<div class="site-branding">
 						<div class="logo">
 							<a href= "<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -35,7 +35,7 @@
 						<?php get_search_form()?>
 					</div>
 				</nav><!-- #site-navigation -->
-				</div>
+				
 			</header><!-- #masthead -->
 			
 			<div id="content" class="site-content">
