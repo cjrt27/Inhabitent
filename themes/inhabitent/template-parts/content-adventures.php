@@ -22,7 +22,7 @@
 
 	<div class="adventures-info">
 		<p class="title"><?php echo the_title(); ?></p>
-        <a href="<?php home_url()?>/wordpressInhabitent/adventures" class="button" id="read-more">Read More</a>
+		<a href="<?php the_permalink()?>" class="button" id="read-more">Read More</a>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
