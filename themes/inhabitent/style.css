@@ -1872,6 +1872,20 @@ page-title h1 {
 .post-type-archive-adventures .site-content .content-area {
   padding-top: 50px; }
 
+.post-type-archive-adventures .site-content .page-title {
+  display: none; }
+
+.post-type-archive-adventures .site-content .taxonomy-description {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  font-family: Novecento Sans Web,sans-serif;
+  letter-spacing: 2px;
+  max-width: 1120px;
+  border-bottom: 1px dashed grey;
+  margin-left: auto;
+  margin-right: auto; }
+
 .adventures-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1886,3 +1900,149 @@ page-title h1 {
 
 #post-153 .entry-header {
   position: relative; }
+
+#post-153 .entry-header .adventure-thumbnail-wrapper a img {
+  min-height: 550px;
+  min-width: 550px;
+  max-height: 550px;
+  max-width: 550px; }
+
+#post-153 .adventures-info {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 3rem;
+  font-family: Merriweather,sans-serif;
+  font-weight: 400;
+  margin-left: 3%; }
+
+#post-153 .adventures-info a {
+  border: 1px solid #fff;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+#post-153 .adventures-info a:link {
+  color: white; }
+
+#post-153 .adventures-info a:visited {
+  color: white; }
+
+#post-153 .adventures-info a:hover {
+  background-color: #248a83; }
+
+#post-150 {
+  position: relative; }
+
+#post-150 .entry-header {
+  position: relative; }
+
+#post-150 .entry-header .adventure-thumbnail-wrapper a img {
+  min-height: 550px;
+  min-width: 550px;
+  max-height: 550px;
+  max-width: 550px; }
+
+#post-150 .adventures-info {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 3rem;
+  font-family: Merriweather,sans-serif;
+  font-weight: 400;
+  margin-left: 3%; }
+
+#post-150 .adventures-info a {
+  border: 1px solid #fff;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+#post-150 .adventures-info a:link {
+  color: white; }
+
+#post-150 .adventures-info a:visited {
+  color: white; }
+
+#post-150 .adventures-info a:hover {
+  background-color: #248a83; }
+
+#post-149 {
+  position: relative; }
+
+#post-149 .entry-header {
+  position: relative; }
+
+#post-149 .entry-header .adventure-thumbnail-wrapper a img {
+  min-height: 550px;
+  min-width: 550px;
+  max-height: 550px;
+  max-width: 550px; }
+
+#post-149 .adventures-info {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 3rem;
+  font-family: Merriweather,sans-serif;
+  font-weight: 400;
+  margin-left: 3%; }
+
+#post-149 .adventures-info a {
+  border: 1px solid #fff;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+#post-149 .adventures-info a:link {
+  color: white; }
+
+#post-149 .adventures-info a:visited {
+  color: white; }
+
+#post-149 .adventures-info a:hover {
+  background-color: #248a83; }
+
+#post-144 {
+  position: relative; }
+
+#post-144 .entry-header {
+  position: relative; }
+
+#post-144 .entry-header .adventure-thumbnail-wrapper a img {
+  min-height: 550px;
+  min-width: 550px;
+  max-height: 550px;
+  max-width: 550px; }
+
+#post-144 .adventures-info {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 3rem;
+  font-family: Merriweather,sans-serif;
+  font-weight: 400;
+  margin-left: 3%; }
+
+#post-144 .adventures-info a {
+  border: 1px solid #fff;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+#post-144 .adventures-info a:link {
+  color: white; }
+
+#post-144 .adventures-info a:visited {
+  color: white; }
+
+#post-144 .adventures-info a:hover {
+  background-color: #248a83; }
