@@ -14,3 +14,4 @@ The most challenging aspect of this project was learning PHP and wordpress for t
 * JQuery (https://jquery.com/)
 * JQuery Plugins (Slick: http://kenwheeler.github.io/slick/)
 * Smooth Scrolling (https://css-tricks.com/snippets/jquery/smooth-scrolling/)
+* MAMP (https://www.mamp.info/en/)
