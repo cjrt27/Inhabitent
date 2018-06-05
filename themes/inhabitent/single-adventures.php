@@ -49,15 +49,15 @@ get_header(); ?>
 	<div class="social-buttons">
 						<button type="button" class="black-btn">
 							<i class="fab fa-facebook-f"></i>
-							LIKE
+							like
 						</button>
 						<button type="button" class="black-btn">
 						<i class="fab fa-twitter"></i>
-							TWEET
+							tweet
 						</button>
 						<button type="button" class="black-btn">
 						<i class="fab fa-pinterest"></i>
-							PIN
+							pin
 						</button>
 				</div>
 <?php get_footer(); ?>

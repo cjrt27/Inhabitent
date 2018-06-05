@@ -29,21 +29,23 @@ get_header(); ?>
 					<div class="social-buttons">
 						<button type="button" class="black-btn">
 							<i class="fab fa-facebook-f"></i>
-							LIKE
+							like
 						</button>
 						<button type="button" class="black-btn">
 						<i class="fab fa-twitter"></i>
-							TWEET
+							tweet
 						</button>
 						<button type="button" class="black-btn">
 						<i class="fab fa-pinterest"></i>
-							PIN
+							pin
 						</button>
 				</div><!-- .entry-content -->
 				</div>
 			</article><!-- #post-## -->
 			<footer class="entry-footer">
 				</footer><!-- .entry-footer -->
+		<?php endwhile; // End of the loop. ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

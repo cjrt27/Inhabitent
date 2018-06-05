@@ -17,6 +17,8 @@ body, button, input, select, textarea {
     border: 1px solid;
 }
 
+
+
 p {
     margin-bottom: 1.5rem;
 }
@@ -220,7 +222,7 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
     
 }
 
-.contact-us{
+.site-footer .contact-us{
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
@@ -228,11 +230,11 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
     color: white;
 }
 
-.contact-us h3{
+.site-footer .contact-us h3{
     color: #d99054
 }
 
-.business-hours{
+.site-footer .business-hours{
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 3;
@@ -240,20 +242,21 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
     color: white;
 }
 
-.business-hours h3{
+.site-footer .business-hours h3{
     color: #d99054
 }
 
-.site-info{
+.site-footer .site-info{
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end: 7;
     justify-self: center;
     color: white;
+    text-transform:uppercase;
 }
 
-.footer-logo{
+.site-footer .footer-logo{
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 4;
@@ -265,7 +268,7 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
     max-height: 50px;
 }
 
-.days-of-week{
+.site-footer .days-of-week{
     font-weight: bold;
 }
 
@@ -467,6 +470,11 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
 .product-type-title-wear  a:hover{
     color: #2f1339
 }
+
+.social-buttons button{
+    text-transform: uppercase;
+}
+
 /* SHOP STUFF END-----------------------------------------------------------*/
 
 

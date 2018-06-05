@@ -17,7 +17,7 @@ get_header(); ?>
 
 <!--  looping through Shop Product Types on front page START -->
 <section class="product-container">
-		<h1>SHOP STUFF</h1>
+		<h1>shop stuff</h1>
 <?php 
 
     $terms = get_terms(array(
@@ -43,7 +43,7 @@ get_header(); ?>
 <!--  looping through Shop Product Types on front page END -->
 <!--  looping through most recent journal posts on front page START -->
 <section class="journal-container">
-		<h1>INHABITENT JOURNAL</h1>
+		<h1>inhabitent journal</h1>
 			<?php
 				
 				
@@ -70,7 +70,7 @@ get_header(); ?>
 
 <!--  looping through most recent Adventure posts on front page START -->
 <section class="adventures-container">
-		<h1>LATEST ADVENTURES</h1>
+		<h1>latest adventures</h1>
 			<?php
 				
 				
@@ -95,7 +95,7 @@ get_header(); ?>
 						</div>
 					</div>	 
 			<?php endforeach; wp_reset_postdata(); ?>
-			<div class="more-adventures"><a href="<?php home_url()?>/wordpressInhabitent/adventures" class="button">MORE ADVENTURES</a>
+			<div class="more-adventures"><a href="<?php home_url()?>/wordpressInhabitent/adventures" class="button">more adventures</a>
 			</div>
 </section>
 <!--  looping through most recent Adventure posts on front page END -->

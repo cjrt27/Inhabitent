@@ -12,7 +12,7 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				
 					<div class="contact-us">
-						<h3>CONTACT INFO</h3>
+						<h3>contact info</h3>
 						<p>
 							<i class ="fa fa-envelope"></i>
 							<a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
@@ -27,7 +27,7 @@
 							<span><i class ="fab fa-google-plus-square"></i></span> 
 					</div>
 					<div class="business-hours">
-						<h3>BUSINESS HOURS</h3>
+						<h3>business hours</h3>
 						<p> 
 							<span class="days-of-week">Monday-Friday: </span>9am to 5pm
 						</p>
@@ -43,7 +43,7 @@
 							<img src="<?php echo get_template_directory_uri()?>/images/logos/inhabitent-logo-text.svg" alt="Our Company Logo">
 						</a>
 					</div>
-					<div class="site-info">COPYRIGHT &copy 2017 INHABITENT
+					<div class="site-info">copyright &copy 2017 inhabitent
 					</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
