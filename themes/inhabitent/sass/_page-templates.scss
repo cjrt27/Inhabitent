@@ -96,7 +96,6 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
 
  .main-navigation{
     max-width:1120px;
-    justify-self: end;
     align-items: center;
     display: flex;
     justify-content: flex-end;
@@ -251,7 +250,7 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end: 7;
-    justify-self: center;
+    margin:auto;
     color: white;
     text-transform:uppercase;
 }
@@ -261,11 +260,12 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
     grid-row-end: 3;
     grid-column-start: 4;
     grid-column-end: 7;
-    justify-self: center;
     margin-top:25px;
     z-index:4;
     max-width: 280px;
     max-height: 50px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .site-footer .days-of-week{
@@ -873,16 +873,21 @@ page-title h1{
 
 .post-type-archive-products .content-area .page-header h1{
     text-align:center;
+    margin-top:2rem;
 }
 
 .product-types{
     display:flex;
     flex-direction:row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items:center;
     text-transform: uppercase;
     border-bottom: 1px dashed grey;
     margin-bottom:2rem;
+}
+
+.product-type-on-shop{
+    margin: 1rem 1.5rem 1.5rem 2rem;
 }
 
 .product-grid{
@@ -1267,7 +1272,6 @@ text-align: center;
     padding: .75rem 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
-    text-shadow:0;
 }
 
 .required{
