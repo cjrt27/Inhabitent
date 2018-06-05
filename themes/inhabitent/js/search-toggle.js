@@ -14,6 +14,10 @@ $('.search-submit').click(function(e){
     $('.search-field').slideToggle();
 });
 
+$('.search-field').blur(function(){
+  $('.search-field').css({'display':'none'});
+});
+
 $('.search-field').click(function(e){
     e.stopPropagation();
 });
