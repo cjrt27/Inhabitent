@@ -19,4 +19,4 @@ At the conclusion of this project, I can say that I learned a great deal about P
 * MAMP (https://www.mamp.info/en/)
 
 # Desktop Screenshot
-![Desktop Screenshot](https://cjrt27.github.io/Inhabitent/themes/inhabitent/images/desktop-screenshot.jpg)
+![Desktop Screenshot](https://github.com/cjrt27/Inhabitent/themes/inhabitent/images/desktop-screenshot.jpg)
