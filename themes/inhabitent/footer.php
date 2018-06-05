@@ -22,7 +22,7 @@
 							<a href="tel:5551234567">778-456-7891</a>
 						</p>
 						<p>
-							<span><i class="fab fa-facebook-square"></i></i></span>
+							<span><i class="fab fa-facebook-square"></i></span>
 							<span><i class="fab fa-twitter-square"></i></span>
 							<span><i class ="fab fa-google-plus-square"></i></span> 
 					</div>
@@ -43,7 +43,7 @@
 							<img src="<?php echo get_template_directory_uri()?>/images/logos/inhabitent-logo-text.svg" alt="Our Company Logo">
 						</a>
 					</div>
-					<div class="site-info">copyright &copy 2017 inhabitent
+					<div class="site-info">copyright &copy; 2017 inhabitent
 					</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
