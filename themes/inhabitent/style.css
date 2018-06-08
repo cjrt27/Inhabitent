@@ -850,7 +850,7 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
   color: #248a83; }
 
 #primary-menu a:hover {
-  color: #f0e4d1; }
+  color: #2f1339; }
 
 #menu-item-105 {
   grid-column-start: 1;
@@ -1394,7 +1394,7 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
   background-color: #248a83; }
 
 /* Front page END---------------------------------------------------------------------------------*/
-/* 404 START -------------------------------------------------------------------------------------*/
+/* Search START -------------------------------------------------------------------------------------*/
 page-title h1 {
   font-size: 2.4rem;
   font-weight: bold; }
@@ -1414,6 +1414,76 @@ page-title h1 {
   padding-left: 8%;
   padding-top: 3rem;
   padding-bottom: 3rem; }
+
+/* Search END -------------------------------------------------------------------------------------*/
+/* 404 START -------------------------------------------------------------------------------------*/
+page-title h1 {
+  font-size: 2.4rem;
+  font-weight: bold; }
+
+.error404 .site-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 50px;
+  max-width: 1120px;
+  min-width: 1120px;
+  margin: auto;
+  border-top: 1px solid #e1e1e1; }
+
+.error404 .site-content .content-area {
+  padding-top: 50px; }
+
+.error404 .widget-area {
+  padding-left: 8%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.error404 fieldset {
+  border: 0;
+  padding: 0;
+  padding-bottom: .75rem;
+  margin: 0; }
+
+.error404 label {
+  display: inline-block;
+  color: #2f1339;
+  display: block;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase; }
+
+.page-content i {
+  display: none; }
+
+.error404 .page-content .widget_recent_entries ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.error404 .page-content .widget_categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.error404 .page-content .widget_recent_entries ul li a:link {
+  color: #248a83; }
+
+.error404 .page-content .widget_recent_entries ul li a:visited {
+  color: #248a83; }
+
+.error404 .page-content .widget_recent_entries ul li a:hover {
+  color: #2f1339; }
+
+.error404 .page-content .widget_categories ul li a:link {
+  color: #248a83; }
+
+.error404 .page-content .widget_categories ul li a:visited {
+  color: #248a83; }
+
+.error404 .page-content .widget_categories ul li a:hover {
+  color: #2f1339; }
 
 /* 404 END -------------------------------------------------------------------------------------*/
 /* About START -------------------------------------------------------------------------------------*/
